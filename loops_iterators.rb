@@ -5,7 +5,7 @@ while i < 10
 	i += 1
 end
 
-#most popular iterator is (.each)... This will will print
+#most popular iterator is (.each)... This will print your arr items
 arr = [23, 56, 87, 23, 45]
 	arr.each do |i|
 		p i
@@ -38,7 +38,7 @@ teams.each do |team|
   p team
 end
 
-#this loop of the hash will organize the output by team then position followed by the player.
+#this loop of the hash will organize the output by team then within the teams it will display position followed by the player.
 teams = {
     "Houston Astros" => {
       "first base" => "Chris Carter",
