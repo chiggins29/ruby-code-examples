@@ -9,6 +9,7 @@ positions = { "first_base" => "Chris Carter", "second_base" => "Jose Altuve", "s
 people = { Cody: 27, Jon: 33, Channing: 28 }
 people.delete(:Cody)
 
+
 #iterating over the keys in the hash
 people = { Cody: 27, Jon: 33, Channing: 28 }
 people.each_key do |key|
