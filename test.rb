@@ -1,28 +1,38 @@
-drinks = {
-		"drpepper" => "1.99",
-		"pepsi" => "1.89",
-		"lemonaid" => "1.50"
-	}
-		puts drinks	
-		puts "What drink would you like?"
+drinks = {drpepper: 1.99, pepsi: 1.89, mtndew: 1.99} 		
+	empty = {}
+
+    def empty
+      empty[pick.to_sym] = drinks[pick.to_sym]
+		end
+
+		print drinks
+		print "What drink would you like?"
 		pick = gets.chomp
 
-      
-      	if pick == "drpepper" do drinks.fetch("drpepper"){|k|}
-      		puts "You bought drpepper for #{k}"
-      	elsif pick == "pepsi"
-      		puts "You bought pepsi"
-      	elsif pick == "lemonaid"
-      		puts "You bought lemonaid" 
-      	end 
+		if drinks[pick.to_sym] != nil
+			empty[pick.to_sym] = drinks[pick.to_sym]
+		end
 
+		print "What else would you like?"
+		pick = gets.chomp
 
+		if drinks[pick.to_sym] != nil
+			empty[pick.to_sym] = drinks[pick.to_sym]
+		end
 
-empty = Hash.new
-empty[pick.to_sym]
+		p empty
+		p empty.values.inject(&:+)
 
-
-#this will print just the value of drpepper
-drinks.fetch("drpepper"){|k| puts k}
-
-drinks.fetch(pick){|k| puts k}
+		class Array
+		  def average
+		    inject(&:+) / size
+		  end
+		end
+		
+		past_rating = [5, 5, 2, 6, 8, 2]
+		
+		print "How would you rate your expience"
+		rating = gets.chomp.to_i
+		past_rating << rating
+		
+		p past_rating.average
