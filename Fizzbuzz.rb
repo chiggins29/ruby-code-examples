@@ -1,11 +1,12 @@
-(1..100).each do |numbers|
-  if numbers % 3 == 0 && numbers % 5 == 0
+(1..100).each do |x|
+  if x % 5 == 0 && x % 3 == 0
     puts "FizzBuzz"
-  elsif
-    numbers % 3 == 0
-      puts "Fizz"
+  elsif x % 3 == 0
+    puts "Fizz"
+  elsif x % 5 == 0
+    puts "Buzz"
   else
-    numbers % 5 == 0
-      puts "Buzz"
-    end
-  end
+    puts "nil"
+  end 
+end
+    
