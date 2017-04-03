@@ -1,1 +1,1 @@
-p "Hey there".chars.reduce { |x, y| y + x }
+p "Hey there".split("").reduce { |x, y| y + x }
