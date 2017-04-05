@@ -26,21 +26,16 @@ require 'pry'
  
  	if @user_pick == 'odd' && table_pick % 2 == 1
  		logic
-
  	elsif @user_pick == 'even' && table_pick % 2 == 0
  		logic
-
  	elsif @user_pick == table_pick
  		winnings = @user_bet * 36
  			puts "You win #{winnings}"
  			@account += winnings
-
  	elsif @user_pick == 'red' && table_pick.odd?
  		logic
-
  	elsif @user_pick == 'black' && table_pick.even?
  		logic
- 		
  	else
  		puts "You lose #{@user_bet}"
  		p @account 
@@ -64,3 +59,18 @@ def logic
  	@account += winnings
 end
 game
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
