@@ -38,7 +38,6 @@ require 'text-table'
 
 puts "Where do you want to put your points? "
 
-
 case gets.chomp.capitalize
   when "Aces"
     aces = @rolled.select { |x| x == 1}.inject(:+)
