@@ -3,6 +3,6 @@
 		"sourceMap": true
 	},
 	"files": [
-		"hello_typescript.ts"
+		"arithmetic_operators.ts"
 	]
 }
