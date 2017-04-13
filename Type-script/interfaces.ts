@@ -4,4 +4,14 @@ interface User {
 	lastName : string;
 }
 
-function profile(user: User)
+function profile(user: User) : string {
+	return `Welcome, ${user.firstName} ${user.lastName}`
+}
+
+var realUser = {
+	email: 'test@test.com',
+	firstName: 'Cody',
+	lastName: 'Higgins'
+};
+
+console.log(profile(realUser));
