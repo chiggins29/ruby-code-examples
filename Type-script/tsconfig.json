@@ -1,8 +1,13 @@
 {
 	"compilerOptions": {
+		"module": "amd",
+		//"target": "es6",
+		"target": "ES5",
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
 		"sourceMap": true
 	},
 	"files": [
-		"higher_order_functions_callbacks.ts"
+		"method_decorators.ts"
 	]
 }
