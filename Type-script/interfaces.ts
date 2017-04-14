@@ -1,7 +1,7 @@
 interface User {
 	email : string;
-	firstName : string;
-	lastName : string;
+	firstName? : string;  //pass in a question mark to make it optional and not required
+	lastName? : string;
 }
 
 function profile(user: User) : string {
@@ -15,3 +15,4 @@ var realUser = {
 };
 
 console.log(profile(realUser));
+

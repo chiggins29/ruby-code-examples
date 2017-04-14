@@ -3,6 +3,6 @@
 		"sourceMap": true
 	},
 	"files": [
-		"interfaces.ts"
+		"higher_order_functions_callbacks.ts"
 	]
 }
